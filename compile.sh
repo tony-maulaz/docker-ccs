@@ -5,7 +5,7 @@ echo Import project
 eclipse -noSplash \
         -data /workspace \
         -application com.ti.ccstudio.apps.projectImport \
-        -ccs.location /tmp/project 2> /dev/null
+        -ccs.location $("pwd") 2> /dev/null
 
 if [ $? -eq 0 ]
 then
