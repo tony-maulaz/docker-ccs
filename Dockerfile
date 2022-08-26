@@ -33,7 +33,6 @@ RUN ./tmp/ccs/CCS10.4.0.00006_linux-x64/ccs_setup_10.4.0.00006.run --prefix /opt
  RUN rm -f /tmp/ccs/ccs10.4.0.tar.gz
 
 # Install compiler
-RUN mkdir -p /tmp/ccs/
 RUN curl -L https://dr-download.ti.com/software-development/ide-configuration-compiler-or-debugger/MD-p4jWEYpR8n/21.6.0.LTS/ti_cgt_msp430_21.6.0.LTS_linux-x64_installer.bin -o /tmp/ccs/ti_cgt_msp430_21.6.0.LTS_linux-x64_installer.bin --silent && \
     chmod +x ./tmp/ccs/ti_cgt_msp430_21.6.0.LTS_linux-x64_installer.bin && \
     ./tmp/ccs/ti_cgt_msp430_21.6.0.LTS_linux-x64_installer.bin --prefix /opt/ti/ --mode unattended 
