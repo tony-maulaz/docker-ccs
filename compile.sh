@@ -3,7 +3,7 @@
 echo Import project
 
 eclipse -noSplash \
-        -data /workspace \
+        -data /test \
         -application com.ti.ccstudio.apps.projectImport \
         -ccs.location $("pwd") 2> /dev/null
 
@@ -14,7 +14,7 @@ then
   echo Compile project
 
   eclipse -noSplash \
-          -data /workspace \
+          -data /test \
           -application com.ti.ccstudio.apps.projectBuild \
           -ccs.workspace \
           -ccs.listErrors \
